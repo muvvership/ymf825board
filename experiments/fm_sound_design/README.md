@@ -2,7 +2,7 @@
 
 This experiment demonstrates **FM (Frequency Modulation) synthesis** on the YMF825 chip.
 
-## Three Versions Available
+## Four Versions Available
 
 ### 1. Auto-Play Version (`fm_sound_design.ino`)
 Upload this to hear 8 different preset sounds automatically cycling through a C major scale. Great for hearing what each preset sounds like!
@@ -18,6 +18,13 @@ Massive dubstep/bass music lead with wobble control:
 - **POT 2**: Detune/spread (creates thickness)
 - Plays a heavy bass pattern automatically
 - **👉 See [BASSNECTAR_LEAD.md](BASSNECTAR_LEAD.md) for details!**
+
+### 4. **80s Synth Lead (`synth80s_lead.ino`)** 🎹✨
+Classic synthwave arpeggiator with scale & rhythm control:
+- **POT 1**: Resolution (Chromatic → Pentatonic → Octaves → Single note)
+- **POT 2**: Rhythm (Slow ambient → Fast techno)
+- Plays bouncing arpeggio patterns
+- **👉 See [SYNTH80S_LEAD.md](SYNTH80S_LEAD.md) for details!**
 
 **👉 See [BREADBOARD_WIRING.md](BREADBOARD_WIRING.md) for complete breadboard setup instructions!**
 
