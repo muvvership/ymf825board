@@ -79,10 +79,10 @@ void init_825(void) {
    if_s_write(0x02, 0x04); // AP1, AP3
    delay(1);
    if_s_write(0x02, 0x00);
-   if_s_write(0x19, 0x20); // MASTER VOL
+   if_s_write(0x19, 0x3F); // MASTER VOL (was 0x20, now MAX for louder output)
    if_s_write(0x1B, 0x3F); // interpolation
    if_s_write(0x14, 0x00); // interpolation
-   if_s_write(0x03, 0x01); // Analog Gain
+   if_s_write(0x03, 0x03); // Analog Gain (was 0x01, now MAX for louder output)
 
    if_s_write(0x08, 0xF6);
    delay(21);
@@ -275,7 +275,7 @@ void set_tone(unsigned char* tone_data) {
 
 void set_ch(void) {
    if_s_write(0x0F, 0x30); // keyon = 0
-   if_s_write(0x10, 0x71); // chvol
+   if_s_write(0x10, 0x7F); // chvol (was 0x71, now MAX for louder output)
    if_s_write(0x11, 0x00); // XVB
    if_s_write(0x12, 0x08); // FRAC
    if_s_write(0x13, 0x00); // FRAC
@@ -285,7 +285,7 @@ void set_ch(void) {
 
 void keyon(unsigned char fnumh, unsigned char fnuml) {
    if_s_write(0x0B, 0x00); // voice num
-   if_s_write(0x0C, 0x54); // vovol
+   if_s_write(0x0C, 0x7F); // vovol (was 0x54, now MAX for louder output)
    if_s_write(0x0D, fnumh); // fnum
    if_s_write(0x0E, fnuml); // fnum
    if_s_write(0x0F, 0x40); // keyon = 1
