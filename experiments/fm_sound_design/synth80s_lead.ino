@@ -206,7 +206,7 @@ Note chromatic_scale[] = {
   {0x24, 0x52, "A4"},   // 9
   {0x24, 0x71, "A#4"},  // 10
   {0x2C, 0x1d, "B4"},   // 11
-  {0x2C, 0x65, "C5"}    // 12
+  {0x15, 0x65, "C5"}    // 12 (fixed: perfect octave above C4)
 };
 
 // Pentatonic scale (C D E G A C) - classic 80s sound!
@@ -216,15 +216,15 @@ Note pentatonic_scale[] = {
   {0x1C, 0x42, "E4"},   // E
   {0x24, 0x17, "G4"},   // G
   {0x24, 0x52, "A4"},   // A
-  {0x2C, 0x65, "C5"}    // C (octave)
+  {0x15, 0x65, "C5"}    // C (perfect octave)
 };
 
 // Octaves (C at different octaves)
 Note octave_scale[] = {
   {0x0C, 0x32, "C3"},   // Low
-  {0x14, 0x65, "C4"},   // Mid
-  {0x2C, 0x65, "C5"},   // High
-  {0x34, 0x65, "C6"}    // Very high
+  {0x14, 0x65, "C4"},   // Mid (BLOCK=4)
+  {0x15, 0x65, "C5"},   // High (BLOCK=5 - perfect octave)
+  {0x16, 0x65, "C6"}    // Very high (BLOCK=6 - perfect octave)
 };
 
 // Single note (C4 drone)
