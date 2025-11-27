@@ -1,6 +1,18 @@
 # YMF825 FM Sound Design Guide
 
-This experiment demonstrates **FM (Frequency Modulation) synthesis** on the YMF825 chip. Upload `fm_sound_design.ino` to hear 8 different preset sounds cycling through a C major scale.
+This experiment demonstrates **FM (Frequency Modulation) synthesis** on the YMF825 chip.
+
+## Two Versions Available
+
+### 1. Auto-Play Version (`fm_sound_design.ino`)
+Upload this to hear 8 different preset sounds automatically cycling through a C major scale. Great for hearing what each preset sounds like!
+
+### 2. **Interactive Potentiometer Version (`fm_sound_design_pots.ino`)** ⭐
+Control the synth in **real-time** with 2 potentiometers:
+- **POT 1**: Select preset (0-7)
+- **POT 2**: Sweep FM intensity (morphs the sound!)
+
+**👉 See [BREADBOARD_WIRING.md](BREADBOARD_WIRING.md) for complete breadboard setup instructions!**
 
 ## What You'll Hear
 
