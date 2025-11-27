@@ -2,7 +2,7 @@
 
 This experiment demonstrates **FM (Frequency Modulation) synthesis** on the YMF825 chip.
 
-## Two Versions Available
+## Three Versions Available
 
 ### 1. Auto-Play Version (`fm_sound_design.ino`)
 Upload this to hear 8 different preset sounds automatically cycling through a C major scale. Great for hearing what each preset sounds like!
@@ -11,6 +11,13 @@ Upload this to hear 8 different preset sounds automatically cycling through a C 
 Control the synth in **real-time** with 2 potentiometers:
 - **POT 1**: Select preset (0-7)
 - **POT 2**: Sweep FM intensity (morphs the sound!)
+
+### 3. **Heavy Bass Lead (`bassnectar_lead.ino`)** 🔊💥
+Massive dubstep/bass music lead with wobble control:
+- **POT 1**: FM Wobble intensity (filter sweep effect)
+- **POT 2**: Detune/spread (creates thickness)
+- Plays a heavy bass pattern automatically
+- **👉 See [BASSNECTAR_LEAD.md](BASSNECTAR_LEAD.md) for details!**
 
 **👉 See [BREADBOARD_WIRING.md](BREADBOARD_WIRING.md) for complete breadboard setup instructions!**
 
